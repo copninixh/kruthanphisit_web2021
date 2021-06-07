@@ -174,12 +174,12 @@
                     <?php
 						$sql = "SELECT * FROM `lesson` ORDER BY `l_id` ASC";
 						$result = mysqli_query($conn,$sql);
-						echo '<div class="table-responsive">';
+						echo '<div class="table">';
 							echo'<table class="table table-striped m-b-0 text-center" style="font-size:14px" id="data-table-default">';
 							echo'<thead class="bg-pink text-light">';
 							echo'<tr class="fw-700">';
 							echo'<th width="100px">บทที่</th>';
-							echo'<th width="700px" class="text-left">ชื่อบทเรียน</th>';
+							echo'<th width="400px" class="text-left">ชื่อบทเรียน</th>';
 							echo'<th width="200px">บทเรียน</th>';
 							echo'</tr>';
 							echo'</thead>';

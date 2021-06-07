@@ -68,7 +68,7 @@
 						
 									
 							<a href="adddetail.php" class="btn btn-purple">เพิ่มรายละเอียดเว็บไซต์</a>
-						
+					
 						</div>
 					</div>
 				</div>
@@ -107,7 +107,7 @@
 								echo'<tr>';
 								echo'<td>' .$row['d_lesson'].  '</td>';
 								echo'<td>' .$row['d_name'].  '</td>';
-								echo"<td><a href=../theme2.php?id=$row[0] class='btn btn-green' style='color:white' target='_blank'>รายละเอียด</a> </td> ";
+								echo"<td><a href=../theme2.php?id=$row[d_name] class='btn btn-green' style='color:white' target='_blank'>รายละเอียด</a> </td> ";
 								echo"<td><a href=editdetail.php?id=$row[0] class='btn btn-pink'>แก้ไขรายละเอียด</a> ";
 								echo"<td><a onClick=\"javascript: return confirm('ต้องการลบรายละเอียด เรื่อง $row[d_name] ใช่หรือไม่? ไม่สามารถกู้คืนได้ภายหลัง! ');\" href=process/deletedetail.php?id=$row[0] class='btn btn-danger'>ลบรายละเอียด</a></td> ";
 								echo'</tr>';

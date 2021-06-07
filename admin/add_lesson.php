@@ -98,10 +98,10 @@
                         <div class="form-group row m-b-15">
                             <label class="col-form-label col-md-2">เริ่มต้นบทเรียน</label>
                             <div class="col-md-10 mt-2">
-                                <input type="radio" name="l_start" value="1" />
+                                <input type="radio" name="l_start" value="1" required />
                                 <label for="inlineCssRadio1">ใช่</label>
 
-                                <input type="radio" name="l_start" value="2" />
+                                <input type="radio" name="l_start" value="2" checked />
                                 <label for="inlineCssRadio1">ไม่ใช่</label>
 
                             </div>
@@ -110,7 +110,7 @@
                         <div class="form-group row m-b-15">
                             <label class="col-form-label col-md-2">ประเภทเนื้อหา</label>
                             <div class="col-md-10 mt-2">
-                                <input type="radio" id="inlineCssRadio1" name="l_type" value="1" />
+                                <input type="radio" id="inlineCssRadio1" name="l_type" value="1" checked required />
                                 <label for="inlineCssRadio1">เนื้อหาบทเรียนทั่วไป</label>
 
                                 <input type="radio" id="inlineCssRadio1" name="l_type" value="2" />

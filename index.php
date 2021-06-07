@@ -270,6 +270,11 @@ p {
     width: 100%;
     /* This will be the new width of your border when on hover */
 }
+
+.section-title{
+    padding: 14px;
+    background-color: #e91e63;
+}
 </style>
 
 <body class="bg-white">
@@ -530,6 +535,33 @@ p {
 
     </div>
 
+    <!-- Section 2 -->
+    <div class="col-xl-12 pt-4 pb-4" style="background-color: #f2f6ff;">
+        <div class="container">
+
+            <div class="row">
+              
+                <div class="col-xl-12 pt-4">
+                    <h3 class="section-title text-light">ข่าวประชาสัมพันธ์ <a href="all_news.php" style="float: right !important;font-size:14px;margin-top:-1px" class="btn btn-primary btn-sm">ข่าวทั้งหมด</a></h3>
+                    <?php 
+                        $sqlnews = "SELECT * FROM news ORDER BY n_id ASC LIMIT 10";
+                        $querynews = mysqli_query($conn,$sqlnews);
+                        while($fetchn = mysqli_fetch_array($querynews)){
+
+                    ?>
+                    <li style="padding: 10px 10px 2px 10px; border-bottom: 1px dashed #ccc;">
+                        <a href="news_detail.php?id=<?php echo $fetchn[0] ?>" style="font-size: 16px;"><?php echo $fetchn['n_name'] ?> <label class="badge badge-rose" style="font-size: 14px;"><?php echo $fetchn['n_date'] ?>/<?php echo $fetchn['n_month'] ?>/<?php echo $fetchn['n_year'] ?></label></a>
+                        
+                    </li>
+
+                    <?php } ?> 
+                   
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
 
 

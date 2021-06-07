@@ -52,7 +52,14 @@
 							<span>บริหารจัดการหน้าหลักเว็บไซต์</span>
 						</a>
 					</li>
-					
+					<li class="has-sub">
+				
+						<a href="manage_news.php">
+							<i class="fas fa-indent" style="font-size: 17px"></i>
+							<span>จัดการข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+
 					<li class="nav-header">:: ตั้งค่าระบบ ::</li>
 					<li class="has-sub ">
 						<a href="setting.php">

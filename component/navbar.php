@@ -103,6 +103,31 @@
                   <i class="material-icons">face</i>ครูผู้สอน
                 </a>
               </li>
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <i class="material-icons">search</i> เกี่ยวกับเว็บไซต์
+                </a>
+                <div class="dropdown-menu dropdown-with-icons" style="height: auto;font-size:17px">
+                <?php
+                   $sqlabout = "SELECT * FROM detail";
+                   $queryabout = mysqli_query($conn,$sqlabout);
+             
+                   while($fetcha = mysqli_fetch_array($queryabout)){
+                      
+                     
+             
+
+
+                  ?>
+                  <a href="theme2.php?id=<?php echo $fetcha['d_name']; ?>" class="dropdown-item">
+                    <i class="material-icons">search</i> <?php echo $fetcha['d_name']; ?> 
+                  </a>
+                 
+
+                  <?php } ?>
+                  
+                </div>
+              </li>
             </ul>
           </div>
         </div>
